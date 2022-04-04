@@ -852,7 +852,7 @@ public class JavaCompiler {
         start_msec = now();
 
         try {
-            initProcessAnnotations(processors);
+            initProcessAnnotations(processors);//注解初始化
 
             // These method calls must be chained to avoid memory leaks
             delegateCompiler =
